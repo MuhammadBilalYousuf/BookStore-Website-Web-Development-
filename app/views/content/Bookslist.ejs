@@ -1,0 +1,35 @@
+
+<article class="Bookslist <% if (pageID == 'Home'){ %> jumbotron hidden-xs<% } %>">
+<div class="container">
+<div class="row">
+<% BookStore.forEach(function(item) { %>
+<div class="<% if(pageID == 'home'){%> col-sm-4 text-center <%} else{%>col-sm-8 <%}%>">
+<h3 class="Bookslist-title"><%= item.title %></h3>
+<h5 class="Bookslist-name"> <a href="/BookStore/<%= item.shortname %>"><%= item.name %></a></h5>
+<p class="Bookslist-info"><a href="/BookStore/<%= item.shortname %>">
+
+<% if(pageID == 'Home') {%>
+<img class="Bookslist-img img-circle" src="/images/BookStore/<%= item.shortname %>.jpg"
+alt="Photo of <%= item.name %>">
+<% } %>
+<% if(pageID == 'BookStore') {%>
+<img class="Bookslist-img img-circle pull-left" src="/images/BookStore/<%= item.shortname %>.jpg"
+alt="Photo of <%= item.name %>">
+<% } %>
+
+</a>
+<% if(pageID == 'BookStoreDetail') {%>
+<img class="Bookslist-img img-responsive pull-left" src="/images/BookStore/<%= item.shortname %>_tn.jpg"
+alt="Photo of <%= item.name %>">
+<% } %>
+</a>
+<% if(pageID !== 'Home') {%>
+
+<%= item.summary %>
+<%}%>
+</p>
+</div>
+<%  }); %>
+</div>
+</div>
+</article>

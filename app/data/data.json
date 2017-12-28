@@ -1,0 +1,22 @@
+{
+  "BookStore": [{
+    "title" : "Book1",
+    "name": "Author1",
+    "shortname" : "Book1",
+    "summary" : "Introduction of the book",
+    "description": "<p>Author Life and Age etc</p>"
+    },{
+    "title" : "Book2",
+    "name": "Author2",
+    "shortname" : "Book2",
+    "summary": "Introduction of the book",
+    "description": "<p>Author Life and Age etc</p>"
+  },{
+    "title" : "Book3",
+    "name": "Author3",
+    "shortname" : "Book3",
+    "summary": "Introduction of the book",
+    "description": "<p>Author Life and Age etc</p>"
+
+  }]
+}
