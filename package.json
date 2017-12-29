@@ -4,15 +4,17 @@
   "description": "Bookstore",
   "main": "app/app.js",
   "scripts": {
-    "start": "nodemon -e js,css,ejs,json app/app.js --watch app"
+    "start": "nodemon -e js,css,ejs,json --watch app --ignore feedback.json"
   },
   "author": "Bilal",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "data": "^0.6.1",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "reload": "^2.2.2",
-    "serve-favicon": "^2.4.5"
+    "serve-favicon": "^2.4.5",
+    "socket.io": "^2.0.4"
   }
 }
