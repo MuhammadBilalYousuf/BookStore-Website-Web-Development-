@@ -1,4 +1,4 @@
-
+{{# each BookStore }}
 <article class="Bookslist <% if (pageID == 'home'){ %> jumbotron hidden-xs<% } %>">
 <div class="container">
 <div class="row">
@@ -33,3 +33,4 @@ alt="Photo of <%= item.name %>">
 </div>
 </div>
 </article>
+{{/each}}
